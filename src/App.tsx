@@ -1,23 +1,33 @@
-import { useState } from 'react'
-import Header from './Header'
+import './index.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <section className='h-screen relative'>
-        <Header />
-      </section>
-      <section>
-        <h1 className='h-screen text-white'>hello0000</h1>
-      </section>
-      <section>
+      <section className='h-screen'>
         <h1>hello</h1>
+        {/* <embed src="src/assets/again/page1copy.pdf" type="application/pdf" /> */}
+
+        {/* <iframe
+          className='pdf-container'
+          src="src/assets/again/page1copy.pdf"
+          // style={{ width: '100%', height: '100vh', border: 'none' }}
+          title="PDF Viewer"
+        ></iframe> */}
+        {/* <embed
+          src="src/assets/again/page1copy.pdf"
+          type="application/pdf"
+          height="100%"
+          width="100%"
+        ></embed> */}
+        <iframe
+          src="src/assets/again/page1copy.pdf"
+          style={{ width: '100%', height: '100vh', border: 'none' }}
+          title="PDF Viewer"
+          allow="fullscreen"
+        ></iframe>
       </section>
-      <section>
-        <h1>hello</h1>
-      </section>
+
 
     </>
   )
