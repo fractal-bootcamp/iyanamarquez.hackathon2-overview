@@ -4,28 +4,15 @@ function App() {
 
   return (
     <>
-      <section className='h-screen'>
-        <h1>hello</h1>
-        {/* <embed src="src/assets/again/page1copy.pdf" type="application/pdf" /> */}
-
-        {/* <iframe
-          className='pdf-container'
-          src="src/assets/again/page1copy.pdf"
-          // style={{ width: '100%', height: '100vh', border: 'none' }}
-          title="PDF Viewer"
-        ></iframe> */}
-        {/* <embed
-          src="src/assets/again/page1copy.pdf"
-          type="application/pdf"
-          height="100%"
-          width="100%"
-        ></embed> */}
-        <iframe
-          src="src/assets/again/page1copy.pdf"
-          style={{ width: '100%', height: '100vh', border: 'none' }}
-          title="PDF Viewer"
-          allow="fullscreen"
-        ></iframe>
+      <section className='w-screen'>
+        <img src="src/assets/again/page1.jpg" className='w-full h-full object-contain'></img>
+      </section>
+      <section className='w-screen'>
+        <img src="src/assets/again/page2.jpg" className='w-full h-full object-contain'></img>
+      </section>  <section className='w-screen'>
+        <img src="src/assets/again/page3.jpg" className='w-full h-full object-contain'></img>
+      </section>  <section className='w-screen'>
+        <img src="src/assets/again/page4.jpg" className='w-full h-full object-contain'></img>
       </section>
 
 
